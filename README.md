@@ -21,6 +21,8 @@
    ```
   * Optimizer: AdamW
 
+### [XGBoost](https://xgboost.readthedocs.io/en/stable/python/python_intro.html)
+
 ## Introduction to Python
 * Introduction of Pandas, [see this document](Basic-Pandas.md)
   
