@@ -32,14 +32,21 @@ import pandas as pd
   df_sample.columns
   ```
 * Data cleaning: working with missing data
-  dropna() drops rows or columns with missing data
-  DataFrame.dropna(*, axis=0, how=_NoDefault.no_default, thresh=_NoDefault.no_default, subset=None, inplace=False, ignore_index=False)
+  DataFrame.dropna(*, axis=0, how=_NoDefault.no_default, thresh=_NoDefault.no_default, subset=None, inplace=False, ignore_index=False): drops rows or columns with missing data
+  - axis : {0 or 'index', 1 or 'columns'}, default 0
+  - how : {'any', 'all'}, default 'any'
+  - thresh : int, optional
+  - subset : column label or sequence of labels, optional
   ```
   df_sample.dropna() 
   df_sample.dropna(axis=1)
-  
-  
-.shape()
-.head()
-.drop_duplicates()
+  ```
+* Data organization  
+  Pandas groupby function is used to split the data into groups based on some criteria. It makes the task of splitting the DataFrame over some criteria really easy and efficient.
+  '''
+  DataFrame.groupby(by=None, axis=0, level=None, as_index=True, sort=True, group_keys=True, squeeze=False, **kwargs)
+  # First grouping based on "Team"
+  # Within each team we are grouping based on "Position"
+  groups = df_sample.groupby(['Team', 'Position'])
+  '''
 
