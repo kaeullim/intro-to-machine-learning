@@ -6,7 +6,7 @@
   * [Transformers](https://github.com/huggingface/transformers)
 
 ## Introduction to Python
-
+* Introduction of Pandas, [see this document](/intro-to-Pandas.md)
 ### Study Plan
  * Leetcode Problems [Top Interview 150](https://leetcode.com/studyplan/top-interview-150/)
  * Leetcode Problems [LeetCode 75](https://leetcode.com/studyplan/leetcode-75/)
