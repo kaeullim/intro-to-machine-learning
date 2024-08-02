@@ -21,7 +21,8 @@
    ```
   * Optimizer: AdamW
 
-### [XGBoost](https://xgboost.readthedocs.io/en/stable/python/python_intro.html)
+### XGBoost [XGBoost](https://xgboost.readthedocs.io/en/stable/python/python_intro.html)
+XGBoost is an implementation of gradient boosted decision trees designed for speed and performance that is dominated by competitive machine learning.
 
 ## Introduction to Python
 * Introduction of Pandas, [see this document](Basic-Pandas.md)
