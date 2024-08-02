@@ -1,4 +1,4 @@
-# Introdction to Pandas
+# Introdction to Pandas [Pandas Documentation](https://pandas.pydata.org/docs/index.html)
 Customarily, we import as follows:
 ```
 import pandas as pd
@@ -16,10 +16,30 @@ import pandas as pd
   - Series: no axis argument needed
   - DataFrame: "index" (axis=0, default), "columns" (axis=1)
   ```
-  sum()
-  mean(0)
-  ``` 
+  sum(): sum of values
+  mean(0): mean of values
+  std(): Bessel-corrected sample standard deviation
+  median(): arithmetic median of values
+  cumsum(): cumulative sum
+  ```
+* Summarizing data
+  There is a convenient describe() function which computes a variety of summary statistics about a Series or the columns of a DataFrame (excluding NAs of course):
+  ```
+  df_sample.describe()
+  ```
+  .columns provides access to the column labels of a data frame. It returns an index object representing the names of the columns in the DataFrame.
+  ```
+  df_sample.columns
+  ```
+* Data cleaning: working with missing data
+  dropna() drops rows or columns with missing data
+  DataFrame.dropna(*, axis=0, how=_NoDefault.no_default, thresh=_NoDefault.no_default, subset=None, inplace=False, ignore_index=False)
+  ```
+  df_sample.dropna() 
+  df_sample.dropna(axis=1)
+  
+  
 .shape()
 .head()
 .drop_duplicates()
-.dropna()
+
