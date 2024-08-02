@@ -51,16 +51,17 @@ import pandas as pd
   '''
   '''
   DataFrameGroupBy.agg(arg, *args, **kwargs)
-  >>> df = pd.DataFrame({'A': [1, 1, 2, 2],
-  ...                    'B': [1, 2, 3, 4],
-  ...                    'C': np.random.randn(4)})
-  >>> df
+  df = pd.DataFrame({'A': [1, 1, 2, 2],
+                    'B': [1, 2, 3, 4],
+                    'C': np.random.randn(4)})
+
      A  B         C
   0  1  1  0.362838
   1  1  2  0.227877
   2  2  3  1.267767
   3  2  4 -0.562860
-  >>> df.groupby('A').agg({'B': ['min', 'max'], 'C': 'sum'})
+    
+ df.groupby('A').agg({'B': ['min', 'max'], 'C': 'sum'})
       B             C
     min max       sum
   A
