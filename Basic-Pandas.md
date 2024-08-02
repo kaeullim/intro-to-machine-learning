@@ -45,8 +45,27 @@ import pandas as pd
   Pandas groupby function is used to split the data into groups based on some criteria. It makes the task of splitting the DataFrame over some criteria really easy and efficient.
   '''
   DataFrame.groupby(by=None, axis=0, level=None, as_index=True, sort=True, group_keys=True, squeeze=False, **kwargs)
-  # First grouping based on "Team"
-  # Within each team we are grouping based on "Position"
+  - First grouping based on "Team"
+  - Within each team we are grouping based on "Position"
   groups = df_sample.groupby(['Team', 'Position'])
   '''
+  '''
+  DataFrameGroupBy.agg(arg, *args, **kwargs)
+  >>> df = pd.DataFrame({'A': [1, 1, 2, 2],
+  ...                    'B': [1, 2, 3, 4],
+  ...                    'C': np.random.randn(4)})
+  >>> df
+     A  B         C
+  0  1  1  0.362838
+  1  1  2  0.227877
+  2  2  3  1.267767
+  3  2  4 -0.562860
+  >>> df.groupby('A').agg({'B': ['min', 'max'], 'C': 'sum'})
+      B             C
+    min max       sum
+  A
+  1   1   2  0.590716
+  2   3   4  0.704907
+  ```
+
 
