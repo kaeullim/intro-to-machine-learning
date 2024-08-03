@@ -14,12 +14,12 @@
    model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=num_labels)
    ```
   * Fine Tuning: selection of optimized parameters (max_length, batch_size, num_epochs)
-  * Attention
   * Tokenization: language model predicts next token using given tokens
    ```
    tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
    ```
   * Optimizer: AdamW
+  * Attention
 
 ### XGBoost [XGBoost](https://xgboost.readthedocs.io/en/stable/python/python_intro.html)
 XGBoost is an implementation of gradient boosted decision trees designed for speed and performance that is dominated by competitive machine learning.
