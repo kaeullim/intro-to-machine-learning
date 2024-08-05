@@ -1,5 +1,9 @@
 # Intro to Machine Learning
 
+## Deep Learning (DL)
+
+### Convolutional Neural Networks (CNNs)
+
 ## Large Language Models (LLMs)
 
 ### Transformers
